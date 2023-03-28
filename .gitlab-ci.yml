@@ -1,0 +1,13 @@
+image: python:3.9
+
+before_script:
+  - pip install scrapy
+  - pip install requests
+
+test:
+  script:
+    - python testunit_t1.py
+
+run:
+  script:
+    - python finder.py
